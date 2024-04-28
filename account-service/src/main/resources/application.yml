@@ -1,8 +1,8 @@
 server:
-  port: 1666
+  port: 1555
 spring:
   application:
-    name: order-service
+    name: account-service
   cloud:
     nacos:
       discovery:
@@ -26,10 +26,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://123.249.19.24:3306/db_order?characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://123.249.19.24:3306/db_account?characterEncoding=utf8&useSSL=false&allowMultiQueries=true
     username: root
     password: maky
-
 seata:
   enabled: true
   # TC服务注册中心的配置，微服务根据这些信息去注册中心获取tc服务地址
@@ -49,3 +48,6 @@ seata:
       seata-demo: default
   # 开启AT事务
   data-source-proxy-mode: AT
+
+
+

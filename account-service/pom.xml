@@ -11,8 +11,8 @@
     </parent>
 
     <!-- 基本信息 -->
-    <artifactId>order-service</artifactId>
-    <description>订单模块</description>
+    <artifactId>account-service</artifactId>
+    <description>扣款模块</description>
     <packaging>jar</packaging>
     <version>1.0.0</version>
 

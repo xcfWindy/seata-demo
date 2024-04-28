@@ -6,13 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-//使用 @EnableDiscoveryClient 注解开启服务注册与发现功能
 @EnableDiscoveryClient
 @MapperScan("com.example.windy.mapper")
-public class OrderServiceApplication {
+public class StorageServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderServiceApplication.class, args);
+        SpringApplication.run(StorageServiceApplication.class, args);
     }
 
 }

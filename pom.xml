@@ -11,6 +11,8 @@
 
     <modules>
         <module>order-service</module>
+        <module>account-service</module>
+        <module>storage-service</module>
     </modules>
     <!-- 属性配置 -->
     <properties>
