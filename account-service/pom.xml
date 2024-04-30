@@ -75,10 +75,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <!-- SpringBoot3注意提高Mybatis-Plus的版本，注意要使用3.5.2之后的版本 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.1</version>
+            <version>3.5.5</version>
         </dependency>
     </dependencies>
 

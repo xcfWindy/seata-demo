@@ -48,4 +48,4 @@ seata:
     vgroup-mapping:
       seata-demo: default
   # 开启AT事务
-  data-source-proxy-mode: AT
+  data-source-proxy-mode: XA
