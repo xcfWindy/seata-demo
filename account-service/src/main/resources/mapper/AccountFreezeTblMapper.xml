@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.windy.mapper.AccountFreezeTblMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.windy.entity.AccountFreezeTbl">
+            <id property="xid" column="xid" jdbcType="VARCHAR"/>
+            <result property="user_id" column="user_id" jdbcType="VARCHAR"/>
+            <result property="freeze_money" column="freeze_money" jdbcType="INTEGER"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        xid,user_id,freeze_money,
+        state
+    </sql>
+</mapper>

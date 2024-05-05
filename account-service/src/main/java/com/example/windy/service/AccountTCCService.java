@@ -17,7 +17,7 @@ public interface AccountTCCService {
      * @param money @BusinessActionContextParameter 声明Try方法的参数，可以加入到TCC事务的上下文中，方便commitMethod，rollbackMethod方法获取
      */
     @TwoPhaseBusinessAction(name = "deduct",commitMethod = "confirm",rollbackMethod = "cancel")
-    void deduct(@BusinessActionContextParameter(paramName = "userid") String userId,
+    void deduct(@BusinessActionContextParameter(paramName = "userId") String userId,
                 @BusinessActionContextParameter(paramName = "money") int money);
 
     /**
